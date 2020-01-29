@@ -11,11 +11,15 @@
 </head>
 <body>
   <div class="container">
-    <div class="box_message">
-      <div class="sent"></div>
-    </div>
     <div class="box_message sent">
-      <div class="sent"></div>
+      <div class="text">
+        ciao
+      </div>
+    </div>
+    <div class="box_message received">
+      <div class="text_1">
+        ciao
+      </div>
     </div>
   </div>
   <div class="box_input">
@@ -23,9 +27,14 @@
     <button type="button" id="button" name="button">Invia</button>
   </div>
   <script id="entry-template" type="text/x-handlebars-template">
-  <div class="entry">
+  <div class="{{sendReceived}}">
     <p>{{text}}</p>
   </div>
+</script>
+<script id="entry" type="text/x-handlebars-template">
+<div class="{{sendReceived}}">
+  <p>{{text}}</p>
+</div>
 </script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
