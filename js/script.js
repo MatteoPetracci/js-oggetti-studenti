@@ -14,3 +14,26 @@ console.log(student);
 for (var key in student) {
   console.log(student[key]);
 }
+
+var students = [
+  {
+    'nome': 'Matteo',
+    'cognome': 'Petracci',
+    'eta': '27'
+  },
+  {
+    'nome': 'Mario',
+    'cognome': 'Rossi',
+    'eta': '35'
+  },
+  {
+    'nome': 'Luca',
+    'cognome': 'Bianchi',
+    'eta': '60'
+  }
+];
+
+for (var i = 0; i < students.length; i++) {
+  var listStudents = students[i];
+  console.log(listStudents);
+}
