@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+
+}
+
+.container {
+  width: 500px;
+  border: 2px solid white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box_message {
+  border: 3px solid white;
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.box_message.sent {
+  display: flex;
+  align-self: flex-end;
+}
+
+.box_input {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 30px;
+}
+button {
+  margin-left: 10px;
+  text-align: center;
+}
