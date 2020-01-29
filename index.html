@@ -4,10 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" integrity="sha256-N5vR06TQIR+YD8oS0yndB1pu/EITeijW52dwezEq7/g=" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
+  <div class="box">
+    <div class="flex_item">
+      <h1>Nomi e cognomi</h1>
+    </div>
+    <div class="eta">
+      <h1>Età studente</h1>
+    </div>
+  </div>
+  <script id="entry-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <h2>{{nome}} {{cognome}}</h2>
+  </div>
+</script>
+<script id="template" type="text/x-handlebars-template">
+<div class="entry">
+  <h2>{{eta}}</h1>
+</div>
+</script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
